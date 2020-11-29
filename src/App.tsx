@@ -1,7 +1,13 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 
-function App(): ReactElement {
-  return <h1>Hello World</h1>;
-}
+import GlobalStyle from './styles/global';
+import Routes from './routes';
+
+const App: React.FC = () => (
+  <>
+    <Routes />
+    <GlobalStyle />
+  </>
+);
 
 export default App;
